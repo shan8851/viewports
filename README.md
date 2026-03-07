@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shan Viewports
 
-## Getting Started
+Preview any site across mobile, tablet, and desktop viewports side-by-side.
 
-First, run the development server:
+Live at [viewports.shan8851.com](https://viewports.shan8851.com)
+
+## What it does
+
+Enter a public URL and instantly see it rendered in multiple device viewports. Drag to reposition, resize from any edge or corner, and add custom viewport sizes.
+
+- **Live iframe embeds** when the target site allows framing
+- **Snapshot fallback** via server-side screenshot when framing is blocked
+- **Smart scaling** — mobile viewports render near 1:1, larger screens scale down proportionally so text stays legible
+- **Multi-edge resize** — drag any edge or corner to resize a viewport
+- **Preset devices** — iPhone SE, iPhone 15 Pro, Pixel 8, iPad Mini, iPad Pro, MacBook Air, Small Laptop
+- **Custom viewports** — any dimensions from 200px to 2000px
+
+## Tech
+
+- Next.js (App Router)
+- TypeScript (strict mode)
+- Tailwind CSS v4
+- JetBrains Mono
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Command | Description |
+|---|---|
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm run lint` | Lint with ESLint |
+| `npm test` | Run tests with Vitest |
